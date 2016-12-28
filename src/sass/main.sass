@@ -105,13 +105,17 @@ body
 	padding-top: 15px
 	min-height: 800px
 	.content-body
-		padding-left: 403px
 		position: relative
+	.text-body
+		padding: 50px
+		background: #f6f7f7
+		h3
+			padding-bottom: 10px
+			border-bottom: 2px solid #d4cfcf
+			margin-bottom: 30px
 .aside-panel
-	position: absolute
-	left: 3px
-	top: 0
 	max-width: 400px
+	padding-right: 100px
 	h2
 		text-transform: uppercase
 		font-size: 1.2em
@@ -206,6 +210,7 @@ body
 
 
 .content-holder
+	max-width: 770px
 	.gen-line
 		position: relative
 		padding-left: 80px
@@ -661,28 +666,43 @@ body
 		left: 0
 	.add-info
 		margin-bottom: 18px
+		&.book
+			label,
+			input,
+			select,
+			textarea
+				max-width: 100%
 		.forms-group
 			width: 50%
 			&:nth-child(even)
 				text-align: right
-			input
-				display: inline-block
-				height: 40px
-				margin-top: 6px
-				border: 1px solid #d4d3d2
-				max-width: 301px
-				width: 100%
-				padding: 11px
-			label
-				font-size: 1.05em
-				display: inline-block
-				width: 100%
-				max-width: 301px
-				text-align: left
+		input,
+		select,
+		textarea
+			display: inline-block
+			height: 40px
+			margin-top: 6px
+			border: 1px solid #d4d3d2
+			max-width: 301px
+			width: 100%
+			padding: 11px
+			outline: none
+		textarea
+			height: 150px
+			margin-top: 10px
+		label
+			font-size: 1.05em
+			display: inline-block
+			width: 100%
+			max-width: 301px
+			text-align: left
 		h4
 			font-size: 1.2em
 			margin-bottom: 19px
 			text-transform: uppercase
+		.file
+			background: #fff
+			padding: 8px
 		.form-group
 			margin-bottom: 22px
 		.checkboxes
@@ -806,3 +826,15 @@ body
 				position: absolute
 				top: 0
 				right: -21px
+.authors-list
+	margin-top: 30px
+	li
+		margin-bottom: 20px
+		text-align: center
+	.image-holder
+		width: 120px
+		display: inline-block
+		border-radius: 50%
+		margin-bottom: 10px
+	span
+		color: #b7b6b6
