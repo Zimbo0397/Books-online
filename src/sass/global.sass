@@ -17,6 +17,22 @@ body
 			position: fixed
 			height: 100%
 			width: 100%
+	&.overf
+		&:before
+			
+.black-plate
+	opacity: 0
+	pointer-events: none
+	&.active
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 2
+		background: rgba(0, 0, 0, 0.25)
+		opacity: 1
+		pointer-events: inherit
 
 section
 	position: relative
@@ -79,6 +95,8 @@ button, input, select, textarea
 		margin-right: 25px
 		font-weight: 600
 		text-decoration: underline
+		@media #{$media-xs-max}
+			margin-right: 15px
 		&:last-child
 			margin-right: 0px
 		&.button
@@ -109,11 +127,16 @@ button, input, select, textarea
 	display: inline-block
 	vertical-align: middle
 	padding-left: 48px
+	@media #{$media-lg-max}
+		display: block
+		padding-left: 0
 	li
 		display: inline-block
 		vertical-align: middle
 		margin-right: 15px
 		line-height: 20px
+		@media #{$media-lp-max}
+			margin-right: 10px
 		a
 			line-height: inherit
 			max-width: 20px
@@ -296,7 +319,7 @@ input
 // GRID
 .container
 	margin: 0 auto
-	width: 1170px
+	max-width: 1170px
 	position: relative
 	@media #{$media-lg-max}
 		width: 100%

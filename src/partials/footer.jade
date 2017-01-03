@@ -8,24 +8,24 @@ section.footer
 				.metrics
 					.image-holder
 						img(src="img/content/metrics.png", alt="")
+				.footer-search
+					form(action="")
+						h4 Подписаться на рассылку
+						.search-holder
+							input(type="text", placeholder="Введите ваш e-mail:")
+							a(href="#") Отправить
+						.socials-holder
+							h4 Социальные сети
+							ul
+								mixin socItem(src)
+									li
+										a(href="#")
+											img(src= src, alt= src)
+								+socItem('img/icons/vk-green.png')
+								+socItem('img/icons/twitter-green.png')
+								+socItem('img/icons/odnoklasniki-green.png')
+								+socItem('img/icons/instagram-green.png')
+								+socItem('img/icons/google+-green.png')
+								+socItem('img/icons/facebook-green.png')
 				.copyright
 					h3 Books-online 2016
-			.footer-search
-				form(action="")
-					h4 Подписаться на рассылку
-					.search-holder
-						input(type="text", placeholder="Введите ваш e-mail:")
-						a(href="#") Отправить
-					.socials-holder
-						h4 Социальные сети
-						ul
-							mixin socItem(src)
-								li
-									a(href="#")
-										img(src= src, alt= src)
-							+socItem('img/icons/vk-green.png')
-							+socItem('img/icons/twitter-green.png')
-							+socItem('img/icons/odnoklasniki-green.png')
-							+socItem('img/icons/instagram-green.png')
-							+socItem('img/icons/google+-green.png')
-							+socItem('img/icons/facebook-green.png')

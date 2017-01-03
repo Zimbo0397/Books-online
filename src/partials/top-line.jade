@@ -21,19 +21,23 @@ section.header
 							a(href="#")
 								.image-holder
 									img(src="img/icons/login.png", alt="")
-								| Вход
+								span Вход
 						li
 							a(href="#")
 								.image-holder
 									img(src="img/icons/bookmarks.png", alt="")
-								| В закладки	
+								span В закладки	
 						li
 							a(href="#")
 								.image-holder
 									img(src="img/icons/add-book.png", alt="")
-								| Добавить книгу
+								span Добавить книгу
 	.nav-holder
 		.container
+			a(href="#").mobile-nav-btn#mobile-nav-btn
+				span
+				span
+				span
 			nav.nav
 				ul
 					li
@@ -48,6 +52,25 @@ section.header
 						a(href="#") Подборки
 					li
 						a(href="#") Новинки
+			nav.nav.mobile#nav
+				ul
+					li
+						a(href="#") Главная
+					li
+						a(href="#") Блог
+					li
+						a(href="#") Ayдиокниги
+					li
+						a(href="#") TOП 100
+					li
+						a(href="#") Подборки
+					li
+						a(href="#") Новинки
+					li
+						.search-holder.mobile
+							input(type="text" placeholder="Введите запрос")
+							a(href="#")
+								img(src="img/icons/icon_zoom-copy.png", alt="")
 			.search-holder
 				input(type="text" placeholder="Введите запрос")
 				a(href="#")
