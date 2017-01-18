@@ -64,5 +64,10 @@ $('#chapter-modal .close-btn').on('click', function() {
 
 $('.read-more').on('click', function(e) {
 	e.preventDefault();
-	$(this).closest('.author-desc').find('p').toggleClass('open');
+	$(this).closest('.author-desc').find('.text-holder').toggleClass('open');
+	if($(this).closest('.author-desc').find('.text-holder').hasClass('open')) {
+		$(this).text('Скрыть')
+	} else {
+		$(this).text('Читать далее')
+	}
 })
