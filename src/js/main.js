@@ -60,3 +60,9 @@ $('#chapter-modal .close-btn').on('click', function() {
 	$('#chapter-modal').removeClass('open');
 	$('body').removeClass('fixed');
 });
+
+
+$('.read-more').on('click', function(e) {
+	e.preventDefault();
+	$(this).closest('.author-desc').find('p').toggleClass('open');
+})
