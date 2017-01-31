@@ -329,6 +329,7 @@ body
 		text-align: right
 		border-bottom: 2px solid #f6f6f6
 		padding-bottom: 12px
+		min-height: 35px
 		h4
 			font-size: 1.22em
 			text-transform: uppercase
@@ -1564,3 +1565,24 @@ body
 		font-size: 1.5em
 	hr
 		border-color: #eaeaea
+
+.top-holder
+	padding-top: 20px
+	margin: -10px
+	padding-bottom: 30px
+	.inline-layout
+		& > *
+			@media #{$media-md-max}
+				width: 50%
+			@media #{$media-lp-max}
+				width: 100%
+	.top-item
+		padding: 10px
+		.image-holder
+			height: 350px
+		.text-holder
+			margin-top: 20px
+			font-size: 1.1em
+			font-weight: 600
+			height: 40px
+			overflow: hidden
