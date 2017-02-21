@@ -517,6 +517,22 @@ body
 					height: 40px
 					width: 40px
 					background: url(../img/icons/arrow_right-pagin.png)
+				&.prev1
+					height: 40px
+					line-height: 40px
+					border: 2px solid #d7d8d8
+					border-radius: 25px
+					padding: 0 20px
+					color: #d7d8d8
+					text-transform: uppercase
+				&.next1
+					height: 40px
+					line-height: 40px
+					border: 2px solid #3db98c
+					border-radius: 25px
+					padding: 0 20px
+					color: #3db98c
+					text-transform: uppercase
 	.to-page
 		width: 160px
 		display: inline-block
@@ -562,6 +578,7 @@ body
 	background: #f7f7f7
 	margin-top: 123px
 	padding-top: 26px
+	padding-bottom: 160px
 	.footer-description
 		max-width: 720px
 		@media #{$media-lg-max}
@@ -593,12 +610,12 @@ body
 		position: absolute
 		top: 0
 		right: 0
-		padding-top: 62px
 		max-width: 367px
 		width: 100%
 		@media #{$media-lg-max}
 			position: static
 			padding-top: 20px
+			margin: 0 auto
 		h4
 			font-size: 1.05em
 			text-transform: uppercase
@@ -706,6 +723,9 @@ body
 	margin-top: 37px
 	padding-left: 46px
 	padding-right: 39px
+	&.main
+		padding-left: 0
+		padding-right: 0
 	@media #{$media-sm-max}
 		padding: 10px
 	h4
@@ -1599,3 +1619,19 @@ body
 			// text-overflow: ellipsis
 		p
 			font-weight: 100
+
+
+#mc_embed_signup
+	background: transparent
+	clear: left
+	font: 14px Helvetica ,Arial, sans-serif
+	h2
+		font-weight: 100
+	input
+		outline: none
+		border-radius: 25px
+	.button
+		background-color: #3db98c
+		border-radius: 25px
+	.mce_inline_error
+		background: transparent !important
