@@ -21,9 +21,6 @@ section.footer
 								.mc-field-group
 									label(for='mce-FNAME') Имя
 									input#mce-FNAME(type='text', value='', name='FNAME')
-								.mc-field-group
-									label(for='mce-LNAME') Фамилия
-									input#mce-LNAME(type='text', value='', name='LNAME')
 								#mce-responses.clear
 									#mce-error-response.response(style='display:none')
 									#mce-success-response.response(style='display:none')
@@ -32,5 +29,21 @@ section.footer
 									input(type='text', name='b_4b30c807e53d0065a3895fc5e_b81455e588', tabindex='-1', value='')
 								.clear
 									input#mc-embedded-subscribe.button(type='submit', value='Подписаться', name='subscribe')
+					.socials-holder
+						h4 Социальные сети
+						ul
+							mixin socItem(src)
+								li
+									a(href="#")
+										img(src= src, alt= src)
+							+socItem('img/icons/vk-green.png')
+							+socItem('img/icons/twitter-green.png')
+							+socItem('img/icons/odnoklasniki-green.png')
+							+socItem('img/icons/instagram-green.png')
+							+socItem('img/icons/google+-green.png')
+							+socItem('img/icons/facebook-green.png')
+					.socials-holder
+						h4 СВЯЗЬ С НАМИ
+						a(href="mailto:all-library.ru@mail.ru") all-library.ru@mail.ru
 				.copyright
 					h3 Books-online 2016
