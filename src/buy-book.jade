@@ -67,13 +67,34 @@ html(lang='ru')
 								.top-book
 									.image-holder
 										img(src="https://cv9.litres.ru/static/bookimages/26/19/49/26194997.bin.dir/26194997.cover_415.jpg", alt="")
+										.posabs-holder
+											.posab
+												span
+													i.fa.fa-star(aria-hidden="true")
+													|БЕСТСЕЛЛЕР
+											.posab.hit
+												span ХИТ ПРОДАЖ
 									h3 Урок восьмой: Как выйти замуж за темного лорда
 
 									.price
 										span Цена :  
 										span.num 69,05 грн.
 									.btns
-										a(href="#").button.green Купить и скачать
+										a(href="#").button.green.down-book Купить и скачать
+									.down-format
+										span Скачать : 
+										ul.inline-layout
+											li
+												a(href="#") FB2
+											li
+												a(href="#") RTF
+											li
+												a(href="#") TXT
+											li
+												a(href="#") EPUB
+										a(href="#").read-frag
+											i.fa.fa-align-left(aria-hidden="true")
+											span Читать фрагмент
 									.book-rating-holder
 										.star-rating
 											.star-rating__wrap
@@ -114,6 +135,11 @@ html(lang='ru')
 											li
 												p Кол-во страниц: 
 													span 430
+											li
+												p Поделиться в соц сетях: 
+												p
+													.ya-share2(data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter")
+
 
 								.comments
 									h4 О книге
@@ -167,3 +193,4 @@ html(lang='ru')
 		include ./partials/footer.jade
 
 		include ./partials/scripts.jade
+		include ./partials/socials.jade
