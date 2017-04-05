@@ -1669,3 +1669,48 @@ body
 			// text-overflow: ellipsis
 		p
 			font-weight: 100
+			&.price
+				margin-top: 9px
+				font-weight: 600
+				span
+					color: #fe959c
+					border-radius: 41px
+					padding-left: 9px
+
+.price-list .image-holder
+	height: 290px
+	margin-bottom: 10px
+.price-list
+	.owl-prev,
+	.owl-next
+		position: absolute
+		top: 36%
+		transform: translateY(-50%)
+		height: 100px
+		width: 35px
+	.owl-next
+		right: -10px
+		&:after
+			content: "\f105"
+			position: absolute
+			top: 0
+			left: 0
+			font-family: "FontAwesome"
+			height: 10px
+			width: 10px
+			font-size: 100px
+			line-height: 100px
+			color: #fe9ea4
+	.owl-prev
+		left: -10px
+		&:after
+			content: '\f104'
+			position: absolute
+			top: 0
+			left: 0
+			font-family: "FontAwesome"
+			height: 10px
+			width: 10px
+			font-size: 100px
+			line-height: 100px
+			color: #fe9ea4

@@ -71,3 +71,25 @@ $('.read-more').on('click', function(e) {
 		$(this).text('Читать далее')
 	}
 })
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav: true,
+    navText: '',
+    responsive:{
+        0:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        480:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
