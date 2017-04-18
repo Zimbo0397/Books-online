@@ -1646,7 +1646,8 @@ body
 				width: 50%
 			@media #{$media-lp-max}
 				width: 100%
-	.top-item
+	.top-item,
+	.item
 		padding: 10px
 		.image-holder
 			height: 230px
@@ -1654,7 +1655,7 @@ body
 			margin-top: 20px
 			font-size: 1.1em
 			font-weight: 600
-			height: 80px
+			height: 83px
 			overflow: hidden
 	&.books-h
 		text-align: center
@@ -1670,12 +1671,17 @@ body
 		p
 			font-weight: 100
 			&.price
-				margin-top: 9px
+				margin-top: 6px
 				font-weight: 600
 				span
 					color: #fe959c
 					border-radius: 41px
 					padding-left: 9px
+			&.author
+				white-space: nowrap
+				width: 100%
+				overflow: hidden
+				text-overflow: ellipsis
 
 .price-list .image-holder
 	height: 290px
